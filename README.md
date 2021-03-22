@@ -11,3 +11,6 @@ Classical Conway's rules, i.e.
 * otherwise cell doesn't change its state
 <p align="center"><img src="img/automaton2.png" width="500px"/></p>
 
+
+## Automaton 3 - Langton's ant
+<p align="center"><img src="img/automaton3-anim.gif" width="500px"/></p>
