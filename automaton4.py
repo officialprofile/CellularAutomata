@@ -27,10 +27,8 @@ def calculate_future(screen, data):
 
             if data[i, j] == "EMPTY":
                 future[i, j] = np.random.choice(["TREE", "EMPTY"], 1, p = [p_tree, 1 - p_tree])[0]
-            elif data[i, j] == "TREE" and "FIRE" in neighbors:
-                future[i, j] = "FIRE"
-            elif data[i, j] == "TREE" and "FIRE" not in neighbors:
-                future[i, j] = np.random.choice(["TREE", "FIRE"], 1, p = [1 - p_ignit, p_ignit])[0]
+            elif data[i, j] == "TREE":
+                future[i, j] = "FIRE" if "FIRE" in neighbors else np.random.choice(["TREE", "FIRE"], 1, p = [1 - p_ignit, p_ignit])[0]
             elif data[i, j] == "FIRE":
                 future[i, j] = "EMPTY"
             else:
