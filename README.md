@@ -10,7 +10,7 @@ Classical Conway's rules, i.e.
 * If cell is alive and has less than two or more than three neighbors then it will die.
 * Otherwise cell doesn't change its state.
 
-For more information can be found on [Wikipedia](https://en.wikipedia.org/wiki/Conway's_Game_of_Life).
+More information can be found on [Wikipedia](https://en.wikipedia.org/wiki/Conway's_Game_of_Life).
 <p align="center"><img src="img/automaton2-anim.gif" width="500px"/></p>
 
 ## Automaton 3 - Langton's Ant
